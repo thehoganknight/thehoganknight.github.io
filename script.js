@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
       let promoHTML = '';
-      if (promoID) promoHTML += `<div style="font-family: Helvetica;" class="promo-code-label">Present code to service technician:  <strong>${promoID}</strong></div>`;
+      if (promoID) promoHTML += `<div style="font-family: Helvetica;" class="promo-code-label">Present this code to your service technician:  <strong>${promoID}</strong></div>`;
 
       const desc = overlay.querySelector('.description');
       if (desc && !desc.querySelector('.promo-code-label')) {
@@ -181,13 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
       let customText = '';
       switch (promoID) {
         case 'PLUM100':
-          customText = 'Enjoy $100 OFF your next plumbing service with this exclusive promo.';
+          customText = 'From hose bibs to garbage disposals, cash in our most popular offer and take $100 off any plumbing service. Can not be combined with any other offer. Save an additional 15% with our Home Care Essential membership.';
           break;
         case 'FREE2ND':
-          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached!';
+          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached! Can not be combined with any other offer. Save an additional 15% with our Home Care Essential membership.';
           break;
         case 'TANK300':
-          customText = 'Claim $300 OFF on a brand new tankless water heater install.';
+          customText = 'Claim $300 OFF on a brand new tankless water heater install. Can not be combined with any other offer. Save an additional 15% with our Home Care Essential membership.';
           break;
         default:
           customText = '';
