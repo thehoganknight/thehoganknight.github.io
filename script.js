@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="enlarged-card show">
       <div class="close-btn">&times;</div>
       <div class="description">
-        <h2 style="font-family: Helvetica, monospace;">Michael & Son Neighbors Special</h2>
+        <h2 style="font-family: Helvetica; font-weight: Bold;">Michael & Son Neighbors Special</h2>
         <p style="font-family: Helvetica; font-weight: Normal;">From hose bibs to spot repairs, create a splash this summer and cash in our most popular offer now thru July 3rd. Can not be combined with any other offer.</p>
       </div>
       <div class="call-to-action" style="font-family: Helvetica;">
@@ -181,19 +181,19 @@ document.addEventListener('DOMContentLoaded', () => {
       let customText = '';
       switch (promoID) {
         case 'PLUM100':
-          customText = 'From hose bibs to garbage disposals, cash in our most popular offer and take $100 off any plumbing service. Can not be combined with any other offer. Save an additional 15% with our Home Care Essential membership.';
+          customText = 'From hose bibs to garbage disposals, cash in our most popular offer and take $100 off any plumbing service.';
           break;
         case 'FREE2ND':
-          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached! Can not be combined with any other offer. Save an additional 15% with our Home Care Essential membership.';
+          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached!';
           break;
         case 'TANK300':
-          customText = 'Claim $300 OFF on a brand new tankless water heater install. Can not be combined with any other offer. Save an additional 15% with our Home Care Essential membership.';
+          customText = 'Claim $300 OFF on a brand new tankless water heater install!';
           break;
         default:
           customText = '';
       }
 
-      desc.textContent = customText || 'From hose bibs to spot repairs, create a splash this summer and cash in our most popular offer now thru July 3rd. Can not be combined with any other offer.';
+      desc.textContent = customText || 'From hose bibs to spot repairs, create a splash this summer and cash in our most popular offer now thru July 3rd. Cannot be combined with any other offer.';
     });
   });
 });

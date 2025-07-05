@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: auto;
   overflow-x: hidden;
 }
 body {
@@ -16,10 +16,13 @@ body {
 }
 
 .carousel {
-  height: 70vh;
+  height: 100vh;
   perspective: 1000px;
   overflow: visible;
-}
+  display: flex;
+  
+
+  }
 
 
 .carousel__list {
@@ -52,7 +55,7 @@ body {
 
 .carousel__item[data-pos="-1"],
 .carousel__item[data-pos="1"] {
-  opacity: .7;
+  opacity: 100;
   filter: blur(1px) grayscale(10%);
 }
 .carousel__item[data-pos="-1"] {
@@ -102,7 +105,7 @@ body {
   color: white;
   margin: 0000;
   margin-bottom: 10.5px;
-  font-family: Helvetica, monospace;
+  font-family: Helvetica;
   line-height: 99%;
   word-wrap: break;
 }
@@ -113,7 +116,7 @@ body {
   color: white;
   margin: 0000;
   margin-bottom: 10.5px;
-  font-family: Helvetica, monospace;
+  font-family: Helvetica;
   line-height: 99%;
   word-wrap: break;
   display: absolute;
@@ -122,7 +125,7 @@ body {
 
 
 .card h1 {
-  font-family: "Montserrat", monospace;
+  font-family: "Montserrat";
   font-size: 6em;
   font-weight: 1000;
   color: white;
@@ -151,7 +154,7 @@ body {
 	text-align-last: justify;
 	z-index: 10;
 	margin-top: -45px;
-	font-family: "Montserrat", monospace;
+	font-family: "Montserrat";
 	
 }
 
@@ -162,7 +165,7 @@ body {
 	z-index: 10;
 	margin-top: -65px;
 	margin-bottom: -10px;
-	font-family: "Montserrat", monospace;
+	font-family: "Montserrat";
 }
 
 #ad {
@@ -176,7 +179,7 @@ body {
   font-size: 1.5em;
   color: white;
   margin: 0000;
-  font-family: Helvetica, monospace;
+  font-family: Helvetica;
   font-weight: Normal;
   text-align-last: justify;
 }
@@ -819,4 +822,44 @@ body, .carousel, .card, button, .arrow {
 
 .enlarged-card-overlay .enlarged-card.show {
   transform: scale(1) rotateX(0);
+}
+
+
+.header-label.secondary {
+  background: yellow;
+}
+
+/* UPDATE: Header banner styling */
+#header-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+
+
+.header-label {
+  font-family: 'Montserrat';
+  font-weight: Black;
+  font-size: 1.3em;
+  padding: 10px 22px;
+  color: white;
+  border-radius: 14px;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* STYLE: Secondary text inside unified header label */
+.header-label .secondary-text {
+  margin-left: 12px;
+  background: gold;
+  padding: 6px 14px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
 }
