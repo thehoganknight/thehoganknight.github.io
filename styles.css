@@ -55,7 +55,7 @@ body {
 
 .carousel__item[data-pos="-1"],
 .carousel__item[data-pos="1"] {
-  opacity: 100;
+  opacity: .4;
   filter: blur(1px) grayscale(10%);
 }
 .carousel__item[data-pos="-1"] {
@@ -851,6 +851,7 @@ body, .carousel, .card, button, .arrow {
   border-radius: 14px;
   text-align: left;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
 }
 
 /* STYLE: Secondary text inside unified header label */
