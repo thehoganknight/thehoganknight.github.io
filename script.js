@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let customText = '';
       switch (promoID) {
         case 'PLUM100':
-          customText = 'Take $100 OFF any main sewer line cleaning and recieve a complimentary camera.';
+          customText = 'Take $100 OFF any main sewer line cleaning and recieve a complimentary camera inspection.';
           break;
         case 'FREE2ND':
           customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached!';
