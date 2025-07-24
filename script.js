@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let customText = '';
       switch (promoID) {
         case 'PLUM100':
-          customText = 'Take $100 OFF any main sewer line cleaning and recieve a complimentary camera inspection.';
+          customText = 'Sewage backing up into the shower? Toilet gurgling? Let us find out why for FREE! Book a free camera inspection of your main sewer line when you mention this limited time offer. Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
           break;
         case 'FREE2ND':
           customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached!';
