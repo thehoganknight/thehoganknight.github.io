@@ -184,10 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
           customText = 'Sewage backing up into the shower? Toilet gurgling? Let us find out why for FREE! Book a free camera inspection of your main sewer line when you mention this limited time offer. Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
           break;
         case 'FREE2ND':
-          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached! Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
+          customText = 'Book a FREE second opinion on any plumbing estimate — no strings attached! Call for details. Offer expires 8/31/25.';
           break;
         case 'TANK300':
-          customText = 'Claim $300 OFF on a brand new tankless water heater install! Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
+          customText = 'Claim $300 off on a brand new tankless water heater! Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
           break;
         default:
           customText = '';
