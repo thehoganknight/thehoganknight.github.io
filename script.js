@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p style="font-family: Helvetica; font-weight: Normal;">From hose bibs to spot repairs, create a splash this summer and cash in our most popular offer now thru July 3rd. Can not be combined with any other offer.</p>
       </div>
       <div class="call-to-action" style="font-family: Helvetica;">
-        <a href="tel:8009486453" class="call-btn">Ready to book? Call us (800) 948-6453</a>
+        <a href="tel:8009486453" class="call-btn">Ready to book? Call us (757) 960-6453</a>
       </div>
     </div>
   `;
@@ -184,10 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
           customText = 'Sewage backing up into the shower? Toilet gurgling? Let us find out why for FREE! Book a free camera inspection of your main sewer line when you mention this limited time offer. Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
           break;
         case 'FREE2ND':
-          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached!';
+          customText = 'Get a FREE second opinion on any plumbing estimate — no strings attached! Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
           break;
         case 'TANK300':
-          customText = 'Claim $300 OFF on a brand new tankless water heater install!';
+          customText = 'Claim $300 OFF on a brand new tankless water heater install! Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
           break;
         default:
           customText = '';
