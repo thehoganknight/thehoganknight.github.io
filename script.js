@@ -83,11 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="enlarged-card show">
       <div class="close-btn">&times;</div>
       <div class="description">
-        <h2 style="font-family: Helvetica; font-weight: Bold;">Michael & Son Neighbors Special</h2>
-        <p style="font-family: Helvetica; font-weight: Normal;">From hose bibs to spot repairs, create a splash this summer and cash in our most popular offer now thru July 3rd. Can not be combined with any other offer.</p>
-      </div>
+        <h2 style="font-family: Times New Roman; font-weight: Bold; font-size: 2.5em; padding: 0; margin: 0;">Michael & Son<span style="font-family: Helvetica; font-weight: Bold; font-size: .5em; text-align: right;"></span></h2>
+		<div class="giga"><span></span></div>
+		
+        
+		<p style="font-family: Helvetica; font-weight: Normal;">From hose bibs to spot repairs, create a splash this summer and cash in our most popular offer now thru July 3rd. Can not be combined with any other offer.</p>
+        
+	 </div>
       <div class="call-to-action" style="font-family: Helvetica;">
-        <a href="tel:8009486453" class="call-btn">Ready to book? Call us (757) 960-6453</a>
+        <a href="tel:8009606453" class="call-btn">Call Us (800) 960-645</a>
+        <a href="tel:8009606453" class="call-btn">Book Online</a>
+        
+		
       </div>
     </div>
   `;
@@ -126,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const promoID = focusedCard.querySelector('h2')?.id || '';
 
       
-      if (promoID) promoHTML += `<div style="font-family: Helvetica;" class="promo-code-label">Show this code to your service technician: <strong>${promoID}</strong></div>`;
+      if (promoID) promoHTML += `<div style="font-family: Helvetica;" class="promo-code-label">Mention this code when booking your appointment: <strong>${promoID}</strong></div>`;
 
       const desc = overlay.querySelector('.description');
       if (desc && !desc.querySelector('.promo-code-label')) {
@@ -151,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
       let promoHTML = '';
-      if (promoID) promoHTML += `<div style="font-family: Helvetica;" class="promo-code-label">Present this code to your service technician:  <strong>${promoID}</strong></div>`;
+      if (promoID) promoHTML += `<div style="font-family: Helvetica;">Mention promo code: <strong class="promo-code-label">${promoID}</strong> when booking your appointment.</div>`;
 
       const desc = overlay.querySelector('.description');
       if (desc && !desc.querySelector('.promo-code-label')) {
@@ -181,13 +188,13 @@ document.addEventListener('DOMContentLoaded', () => {
       let customText = '';
       switch (promoID) {
         case 'PLUM100':
-          customText = 'Sewage backing up into the shower? Toilet gurgling? Let us find out why for FREE! Book a free camera inspection of your main sewer line when you mention this limited time offer. Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
+          customText = 'Claim $100 off any plumbing job! From hosebibs and garbage disposals to water treatment and well work and everything in between.';
           break;
-        case 'FREE2ND':
-          customText = 'Book a FREE second opinion on any plumbing estimate — no strings attached! Call for details. Offer expires 8/31/25.';
+        case 'FREECAM':
+          customText = 'Sewage backing up in your home? Toilets gurgling? Let us find out why for FREE! Recieve a complimentary camera inspection of your main line when we clear it.';
           break;
         case 'TANK300':
-          customText = 'Claim $300 off on a brand new tankless water heater! Restrictions apply. Cannot be combined with other offers. Call for details. Offer expires 8/31/25.';
+          customText = 'Claim $300 off on a brand new tankless water heater install.';
           break;
         default:
           customText = '';

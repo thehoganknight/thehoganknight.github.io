@@ -2,7 +2,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: auto;
   overflow-x: hidden;
 }
 body {
@@ -15,11 +14,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.offer {
+	font-family: Helvtica;
+	font-weight: Bold;
+}
+
 .carousel {
   height: 100vh;
   perspective: 1000px;
   overflow: visible;
-  display: flex;
   
 
   }
@@ -99,8 +102,21 @@ body {
   color: white;
 }
 
+.giga {
+	background-color: white;
+	height: 1%;
+	margin-top: -1%;
+}
+
+h4 {
+  font-family: Helvetica;
+  font-weight: Normal;
+  margin: 0;
+  margin-top: 10px;
+}
+
 .card h2 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: 400;
   color: white;
   margin: 0000;
@@ -149,7 +165,7 @@ body {
 }
 
 #value {
-	font-size: 3.6em;
+	font-size: 3.5em;
 	text-align: center;
 	text-align-last: justify;
 	z-index: 10;
@@ -159,11 +175,11 @@ body {
 }
 
 #value2 {
-	font-size: 3.4em;
+	font-size: 2.5em;
 	text-align: center;
 	text-align-last: justify;
 	z-index: 10;
-	margin-top: -65px;
+	margin-top: -70px;
 	margin-bottom: -10px;
 	font-family: "Montserrat";
 }
@@ -203,6 +219,10 @@ button.select {
   background: #ffc107;
   color: #003f7f;
   cursor: default;
+}
+
+.yellow {
+	color: #ffc107;
 }
 
 button.select span {
@@ -279,6 +299,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 
 
@@ -548,28 +569,6 @@ body {
 }
 
 /* ADDITION: Carousel dot indicators */
-#carousel-dots {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 20;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-.carousel-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ccc;
-  transition: background 0.3s ease;
-}
-
-.carousel-dot.active {
-  background: #999;
-}
 
 /* REMOVE: Hide and disable the discount bar */
 #discount-bar {
@@ -731,6 +730,33 @@ body, .carousel, .card, button, .arrow {
 }
 
 .enlarged-card .call-btn {
+  background-color: transparent;
+  color: white;
+  font-weight: normal;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 32px;
+  font-size: 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1em;
+  border: 3px solid white; /* golden overlay */
+  
+}
+
+.footer {
+	bottom: 100;
+}
+
+.call-btn:hover {
+	border: 3px solid transparent;
+	color: #ffc107;
+	border: 3px solid rgba(255, 193, 7, 0.85);
+}
+
+.site-btn {
   background-color: #ffc107;
   color: white;
   font-weight: bold;
@@ -743,9 +769,7 @@ body, .carousel, .card, button, .arrow {
   
 }
 
-.call-btn:hover {
-	
-}
+
 
 /* ADD: Mobile responsiveness fix for enlarged card */
 @media (max-width: 600px) {
@@ -831,7 +855,7 @@ body, .carousel, .card, button, .arrow {
 
 /* UPDATE: Header banner styling */
 #header-banner {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   padding: 16px 0;
@@ -849,9 +873,31 @@ body, .carousel, .card, button, .arrow {
   padding: 10px 22px;
   color: white;
   border-radius: 14px;
-  text-align: left;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   position: fixed;
+  top: 10px;
+  z-index: 1000;
+}
+
+.promo-code-label {
+	color: #ffc107;
+}
+
+
+
+.header-label-2 {
+  font-family: 'Montserrat';
+  font-weight: Black;
+  font-size: .9em;
+  padding: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  border-radius: 14px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 10px;
 }
 
 /* STYLE: Secondary text inside unified header label */
@@ -863,4 +909,8 @@ body, .carousel, .card, button, .arrow {
   color: white;
   font-weight: bold;
   display: inline-block;
+}
+
+.ms {
+	font-family: Times New Roman;
 }
