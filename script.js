@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
 	 </div>
       <div class="call-to-action" style="font-family: Helvetica;">
-        <a href="tel:8009606453" class="call-btn">Call Us (800) 960-645</a>
+        <a href="tel:8009606453" class="call-btn">Call Us (800) 960-6453</a>
         <a href="https://michaelandson.com/schedule" class="call-btn">Book Online</a>
         
 		
